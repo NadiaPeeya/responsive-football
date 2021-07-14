@@ -1,12 +1,15 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@500&display=swap');
 
 /* Common utilities */
 
 body{
     background-color:#F3F1FF;
     font-family: 'Poppins', sans-serif;
+    
+
 }
 /* Header */
 
@@ -41,8 +44,43 @@ p{
     color: white;
     
     background-color:#E02C6D;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: paused;
   
 }
+/* Animations */
+@keyframes sliding {
+
+    0%{
+    
+        background-color: #E02C6D;
+
+    }
+
+    25%{
+
+
+    }
+
+  50%{
+      background-color: teal;
+  }
+
+  75%{
+
+
+  }
+    100%{
+
+
+    }
+}
+
+.heading:hover .button{
+
+    animation-play-state: running;
+}
+
 
 .about .button{
     display: flex;
@@ -54,6 +92,17 @@ p{
     margin-right: 0px;
     margin-bottom: 0px;
 }
+
+.heading img{
+
+    width:556px;
+    height: 438px;
+    margin-top: 153px;
+    
+    
+}
+
+
 .heading, .about-highlights{
 
     width: 1440px;
@@ -67,19 +116,22 @@ p{
     
 }
 
+/* ending of Header */
+
+/* Main */
 
 main{
     display: flex;
     flex-direction: column;
-    justify-content:space-betweens;
+    justify-content: space-around;
     align-items: center;
     
    
 } 
-    
+/* Main */
 
     
-
+/* Styling in Top Famous Players  */
 
 .famous-players{
 
@@ -112,19 +164,16 @@ main{
     width: 330px;
 }
 
-.heading img{
+/* Ending of stylining in top famous players */
 
-    width:556px;
-    height: 438px;
-    margin-top: 153px;
-    
-    
-}
 
+
+/* styling in Highlighits */
 
 .about-highlights{
 
    display: flex;
+
 }
 .highlights-info{
     
@@ -147,11 +196,117 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.football-clubs{
 
+/* Ending of highlights styling */
+
+
+/* Styling in Top Teams */
+
+.container{
+   
+    margin-top: 0px;
+    background-color:#FFFFFF;
+    width: 1130px;
+    
+    align-items: center;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+   
+}
+
+.about-winner{
+    
+    padding: 100px;
+    display: flex;
+
+    justify-content: space-around;
+    
+
+}
+
+.detail-width{
+    width: 50%;
+    
+}
+
+.winner-details{
+    
+
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 0%;
+
+    
+}
+
+.half-width img{
+
+    width: 300px;
+    height: 236px;
+    margin-bottom: 10px;
+    
+}
+
+
+.winner-details details{
+    display: block;
+    width: 50%;
+}   
+
+/* Adding horizontal line */
+hr {
+    border: 1px solid gray;
+    clear:both;
+    display: block;
+     width: 96%;               
+    
+    height: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  } 
+.team-heading{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+
+.top-teams{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 100px;
+    padding: 50px;
+    margin-left: 30px;
+       
+   }
+
+
+   .team-logo img{
+
+    width: 200px;
+    height: 256px;
+}
+
+/* Ending of styling in top teams */
+
+
+
+/* Styling in clubs */
+
+.football-clubs{
+    
+    margin-top: 50px;
     width: 1150px;
     height: 874px;
-    margin-bottom: 0%;
+    margin-bottom: 100px;
+    margin-left: 0px;
+    margin-right: 20px;
 }
    
 .top-clubs{
@@ -208,70 +363,69 @@ main{
     color:#6C6C6C;
 } 
 
-.team-logo img{
+/* Ending of clubs */
 
-    width: 200px;
-    height: 256px;
+
+ 
+/* Styling in Footer */
+
+.footer-container{
+    
+    width: 480.87px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 63px;
 }
+  .logo{
+  
+    width: 480px;
+    height: 110px;
+    display: flex;
+    justify-content:space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding: 20px;
+  }
 
 
-.team-heading{
-    margin-top: 100px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 35px;
+.social-medias a{
+    text-decoration: none;
+    padding: 5px;
 }
+ 
+      
+  
+  .logo img{
 
-.copa-euro{
-    margin-top: 100px;
-    width: 1130px;
+    width: 90px;
    
-}
+   
+   
+  }
+  .width{
+  
+    padding: 20px;
+   
+  }
 
-.top-teams{
+  .copy-right{
 
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- grid-row-gap: 20px;
- grid-column-gap: 100px;;
-    
-}
-.winner-details{
-    font-size: 35px;
-    font-weight: 700;
-}
-.about-winner{
-    
-        
-        display: flex;
-    
-        justify-content: space-around;
-        
+    font-size: 18px;
+    font-weight: 400;
 
-}
-.winner-details details{
-    display: block;
-    width: 50%;
-}   
+  }
 
-.half-width img{
+  .text-font{
 
-    width: 300px;
-    height: 236px;
-    
-}
-.detail-width{
-    width: 50%;
-}
- hr {
-    border: 1px solid gray;
-    clear:both;
-    display: block;
-     width: 96%;               
-    
-    height: 0px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  } 
+    font-family: 'Niconne', cursive;
+   
+    font-style:Regular;
+    Font-size: 72px;
+    color: #10437A;
+  }
 
+/* Ending of Footer */
 
